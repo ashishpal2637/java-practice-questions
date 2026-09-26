@@ -121,18 +121,38 @@ public class Pattern {
 //        }
 
 
+//        int n = 5;
+//        for(int row = 1; row <= n; row++){
+//            // for each column -> variable columns
+//            if(row == 1 || row == 2 || row == n){
+//                for(int col = 1; col <= row; col++){
+//                    System.out.print("* ");
+//                }
+//            } else {
+//                // middle rows
+//                System.out.print("* ");
+//                //(row - 2) spaces
+//                for(int col = 1; col <= (row - 2); col++){
+//                    System.out.print("  ");
+//                }
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+
+
         int n = 5;
         for(int row = 1; row <= n; row++){
-            // for each column -> variable columns
-            if(row == 1 || row == 2 || row == n){
-                for(int col = 1; col <= row; col++){
+            for(int col = 1; col <= n-row; col++){
+                System.out.print("  ");
+            }
+            if(row == 1 || row == n){
+                for(int col = 1; col <= 2*row-1; col++){
                     System.out.print("* ");
                 }
             } else {
-                // middle rows
                 System.out.print("* ");
-                //(row - 2) spaces
-                for(int col = 1; col <= (row - 2); col++){
+                for(int col = 1; col <= 2*row-3; col++){
                     System.out.print("  ");
                 }
                 System.out.print("* ");
