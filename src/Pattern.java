@@ -2,8 +2,8 @@ public class Pattern {
 
     static void main() {
 
+        // Solid Square
 //        int n = 4;
-//
 //        for(int row = 1; row <= n; row++){
 //            // for each row -> n column
 //            for(int col = 1; col <= n; col++){
@@ -16,8 +16,8 @@ public class Pattern {
 
 
 
+        // Solid Rectangle
 //        int n = 3;
-//
 //        for(int row = 1; row <= n; row++){
 //            // for each row -> 5 columns
 //            for(int col = 1; col <= 5; col++){
@@ -29,8 +29,8 @@ public class Pattern {
 //        }
 
 
+        // Solid right angle triangle
 //        int n = 5;
-//
 //        for(int row = 1; row <= n; row++){
 //            // for each row -> variable column
 //            // formula -> col -> 1 to value of row
@@ -58,6 +58,7 @@ public class Pattern {
 //            System.out.println();
 //        }
 
+        // Inverted Right angle Triangle
 //        int n = 5;
 //        for(int row = 1; row <= n; row++){
 //            // for each row -> variable column
@@ -70,6 +71,7 @@ public class Pattern {
 //            System.out.println();
 //        }
 
+        // Solid Pyramid
 //        int n = 5;
 //        for(int row = 1; row <= n; row++){
 //            // for each row -> variable column
@@ -86,6 +88,7 @@ public class Pattern {
 //        }
 
 
+        // Inverted Solid Pyramid
 //        int n = 4;
 //        for(int row = 1; row <= n; row++){
 //            // for each row -> variable column
@@ -102,6 +105,7 @@ public class Pattern {
 //        }
 
 
+        // Hollow Rectangle
 //        int n = 4;
 //        for(int row = 1; row <= n; row++){
 //            // for each row -> 6 column
@@ -121,6 +125,7 @@ public class Pattern {
 //        }
 
 
+        // Hollow Right angle triangle
 //        int n = 5;
 //        for(int row = 1; row <= n; row++){
 //            // for each column -> variable columns
@@ -141,12 +146,70 @@ public class Pattern {
 //        }
 
 
+        // Hollow Pyramid
+//        int n = 5;
+//        for(int row = 1; row <= n; row++){
+//            for(int col = 1; col <= n-row; col++){
+//                System.out.print("  ");
+//            }
+//            if(row == 1 || row == n){
+//                for(int col = 1; col <= 2*row-1; col++){
+//                    System.out.print("* ");
+//                }
+//            } else {
+//                System.out.print("* ");
+//                for(int col = 1; col <= 2*row-3; col++){
+//                    System.out.print("  ");
+//                }
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+
+
+        // Solid Diamond Pyramid :-> Pyramid + Inverted Pyramid
+        //Part 1
+//        int n = 5;
+//        for(int row = 1; row <= n; row++){
+//            // for each row -> variable column
+//            // spaces
+//            for(int col = 1; col <= n - row; col++){
+//                System.out.print("  ");
+//            }
+//            // stars
+//            for(int col = 1; col <= 2 * row - 1; col++){
+//                System.out.print("* ");
+//            }
+//            // move to next row
+//            System.out.println();
+//        }
+//        Part 2
+//        for(int row = 1; row <= n; row++){
+//            if(row==1){
+//                continue;
+//            }
+//            // for each row -> variable column
+//            // spaces -> row-1
+//            for(int col = 1; col <= row -1; col++){
+//                System.out.print("  ");
+//            }
+//            // stars -> 2*n-2*row-1
+//            for(int col = 1; col <= 2*n-2*row+1; col++){
+//                System.out.print("* ");
+//            }
+//            // move to next row
+//            System.out.println();
+//        }
+
+
+
+        // Hollow Diamond Pyramid
         int n = 5;
         for(int row = 1; row <= n; row++){
             for(int col = 1; col <= n-row; col++){
                 System.out.print("  ");
             }
-            if(row == 1 || row == n){
+            if(row == 1){
                 for(int col = 1; col <= 2*row-1; col++){
                     System.out.print("* ");
                 }
@@ -159,7 +222,6 @@ public class Pattern {
             }
             System.out.println();
         }
-
 
 
 
