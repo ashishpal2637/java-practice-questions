@@ -104,24 +104,33 @@ public class BasicQuestion {
 
 
             // count even and odd digit
-            System.out.println("Enter the digits");
-            int n = sc.nextInt();
-            int evenCount = 0;
-            int oddCount = 0;
-            if (n == 0){
-                evenCount = 1;
+//            System.out.println("Enter the digits");
+//            int n = sc.nextInt();
+//            int evenCount = 0;
+//            int oddCount = 0;
+//            if (n == 0){
+//                evenCount = 1;
+//            }
+//            while(n > 0){
+//                int digit = n % 10;
+//                if(digit % 2 == 0){
+//                    evenCount++;
+//                } else{
+//                    oddCount++;
+//                }
+//                n /= 10;
+//            }
+//            System.out.println("Number of even digit: " + evenCount);
+//            System.out.println("Number of odd digit: " + oddCount);
+
+            // Print digits in a number
+            System.out.println("Enter the digit");
+            int num = sc.nextInt();
+            while(num != 0){
+                   int digit = num % 10;
+                System.out.println(digit);
+                   num = num/10;
             }
-            while(n > 0){
-                int digit = n % 10;
-                if(digit % 2 == 0){
-                    evenCount++;
-                } else{
-                    oddCount++;
-                }
-                n /= 10;
-            }
-            System.out.println("Number of even digit: " + evenCount);
-            System.out.println("Number of odd digit: " + oddCount);
         }
 }
 
