@@ -15,10 +15,16 @@ public class Methods {
 //    }
 
     // return method
-    static int add(int a, int b){
-        int sum = a + b;
-        return sum;
-    }
+//    static int add(int a, int b){
+//        int sum = a + b;
+//        return sum;
+//    }
+
+
+//    static void printWelcomeMessage(){
+//        System.out.println("Welcome to Java Programming");
+//    }
+
     static void main() {
         // method call
 //        printTable();
@@ -26,7 +32,11 @@ public class Methods {
 //        printSum(10,20);
 
 
-        int result = add(24,32);
-        System.out.println("Result is: "+ result);
+//        int result = add(24,32);
+//        System.out.println("Result is: "+ result);
+
+//        printWelcomeMessage();
+
+
     }
 }
